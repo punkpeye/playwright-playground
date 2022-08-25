@@ -8,6 +8,7 @@
     "tsx": "^3.8.2"
   },
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "start": "tsx server.ts"
   }
 }
