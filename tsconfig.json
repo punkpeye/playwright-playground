@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "noEmit": true,
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    "target": "ESNext",
+    "paths": {
+      "@/*": ["*"]
+    }
+  }
+}

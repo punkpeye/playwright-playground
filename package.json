@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@fastify/static": "^6.5.0",
+    "@playwright/test": "^1.25.1",
+    "fastify": "^4.5.2",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "tsx": "^3.8.2"
+  },
+  "scripts": {
+    "test": "playwright test"
+  }
+}
