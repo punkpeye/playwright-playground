@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <script>
+      function dropHandler(event) {
+        event.preventDefault();
+
+        document.querySelector("#drop_zone").innerHTML = [
+          ...event.dataTransfer.files,
+        ]
+          .map((file) => file.name)
+          .join(", ");
+      }
+    </script>
     <form>
       <input type="file" name="foo" />
       <input type="submit" />
+      <div id="drop_zone" ondrop="dropHandler(event);">
+        <p>Drag one or more files to this <i>drop zone</i>.</p>
+      </div>
     </form>
   </body>
 </html>

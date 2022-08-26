@@ -4,6 +4,7 @@
     "@playwright/test": "^1.25.1",
     "fastify": "^4.5.2",
     "husky": "^8.0.1",
+    "playwright-utilities": "^1.0.1",
     "prettier": "^2.7.1",
     "tsx": "^3.8.2"
   },
