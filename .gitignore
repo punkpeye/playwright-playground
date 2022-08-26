@@ -1,5 +1,7 @@
 node_modules
 playwright-report
 .*
+!.eslintignore
 !.gitignore
 !.husky
+!.prettierignore

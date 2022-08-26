@@ -1,6 +1,6 @@
 import { resolve } from "node:path";
 import { expect, test } from "@/tests/test";
-import { createDataTransfer } from 'playwright-utilities';
+import { createDataTransfer } from "playwright-utilities";
 
 test("upload a file", async ({ page }) => {
   await page.goto("http://127.0.0.1:8080/upload-file/");
@@ -12,7 +12,7 @@ test("upload a file", async ({ page }) => {
   await expect(page.locator('input[type="file"]')).toHaveValue(/bar/);
 });
 
-test('upload file using drop event', async ({page}) => {
+test("upload file using drop event", async ({ page }) => {
   await page.goto("http://127.0.0.1:8080/upload-file/");
 
   const dataTransfer = await createDataTransfer({
